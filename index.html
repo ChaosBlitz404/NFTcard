@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .container{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      display:flex;
+
+      flex-direction:column;
+      padding:25px;
+      border-radius:15px;
+      max-width:300px;
+      background-color:hsl(214, 50%, 16%);
+
+     
+    }
+    .shadowContainer{
+
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-40%);
+      background-color:hsl(217, 55%, 10%);
+      width:400px;
+      height:600px;
+      border-radius:15px;
+    }
+
+    .anotherShadow{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+
+      background-color:hsl(216, 67%, 11%);
+      border-radius:15px;
+      width:500px;
+      height:700px;
+    }
+
+    body{
+      background-color:hsl(216, 55%, 11%);
+      font-family:'Outfit';
+    }
+
+    .imageBig{
+      max-width:300px;
+      border-radius:15px;
+    }
+
+
+
+    .icon{
+      float:left;
+    }
+
+    .smallContainer{
+      display:flex;
+      flex-direction:row;
+
+      margin-bottom:15px;
+    }
+
+    .clockText{
+      margin-left:auto;
+    }
+
+    .ethText,.clockText{
+      display:flex;
+      flex-direction:row;
+    }
+
+    hr{
+      opacity:15%;
+      width:300px;
+      margin-top:5px;
+      margin-bottom:5px;
+    }
+    .avatar{
+      width:30px;
+      float:left;
+      border:1px solid white;
+      border-radius:50%;
+    }
+
+    .avatarContainer{
+      display:flex;
+      flex-direction:row;
+      gap:15px;
+      margin-top:15px;
+    }
+    
+    .avatarText{
+ 
+      align-self:center;
+      color:hsl(215, 29%, 70%);
+    }
+
+    h3{
+      color:white;
+    }
+
+    .smallDesc{
+      margin-top:0px;
+      color:hsl(215, 29%, 70%);
+      font-weight:bold;
+    }
+
+    .smallContainer p{
+      margin:0px;
+      padding-left:5px;
+    }
+
+    .avatarContainer p{
+      margin:0px;
+    }
+    
+    b{
+      color:white;
+    }
+
+    .ethText p{
+      color:hsl(180, 87%, 49%);
+      font-weight:bold;
+    }
+
+    .clockText p{
+      color:hsl(215, 29%, 70%);
+      font-weight:bold;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="anotherShadow"></div>
+  <div class="shadowContainer"></div>
+  <main class="container">
+    <img src="images/image-equilibrium.jpg" class="imageBig">
+
+    <h3>
+      Equilibrium #3429
+    </h3>
+    
+    <p class="smallDesc">
+      Our Equilibrium collection promotes balance and calm.
+    </p>
+    
+    <div class="smallContainer">
+      <div class="ethText">
+        <img src="images/icon-ethereum.svg" class="icon">
+        <p>0.041 ETH</p>
+      </div>
+      <div class="clockText">
+        <img src="images/icon-clock.svg" class="icon">
+        <p>3 days left</p>
+      </div>
+      
+    </div>
+   
+    <hr>
+    <div class="avatarContainer">
+      <img src="images/image-avatar.png" class="avatar">
+      <p class="avatarText">Creation of <b>Jules Wyvern</b></p>
+    </div>
+    
+
+  </main>
+
+
+
+
+</body>
+</html>
